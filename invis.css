@@ -1,0 +1,36 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+#keys {
+	position: absolute;
+	left: 30%;
+	top: 16%;
+}
+
+#inputdata {
+  font-size: 18px;
+}
+
+#hintt {
+  font-size: 18px;
+}
+
+#submitbutton {
+  position: absolute;
+  left: 40%;
+  top: 23%;
+  font-size: 24px;
+  background-color: #e66a5c;
+  color: #fff;
+  padding: 4px;
+  border-radius: 3px;
+  transition: background-color 0.15s ease-out;
+}
+
+#submitbutton:hover {
+  transition: background-color 0.3s ease-out;
+  background-color: #9b59b6;
+
+}

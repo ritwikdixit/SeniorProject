@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>bomb ass puzzle game</title>
+		<link href='http://fonts.googleapis.com/css?family=Lora|Open+Sans:400,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="gridstyle.css">
+	</head>
+	<body>
+		<div class="header">
+			<h3><strong>PART 4 (fun stuff)</strong></h3>
+		</div>
+		<p id="instructions">
+		solve this one too (the animation looks cool)
+		</p>
+
+		<div id="controlbox">
+			<div class="caption" id="tr">TRIANGLE:</div>
+			<select id="trianglerule">
+				<option value="R">move right</option>
+				<option value="L">move left</option>
+				<option value="U">move up</option>
+				<option value="D">move down</option>
+			</select>
+			<br>
+			<div class="caption" id="sqr">SQUARE:</div>
+			<select id="squarerule">
+				<option value="L">move left</option>
+				<option value="R">move right</option>
+				<option value="U">move up</option>
+				<option value="D">move down</option>
+			</select>
+			<br>
+			<div class="caption" id="cir">CIRCLE:</div>
+			<select id="circlerule">
+				<option value="U">move up</option>
+				<option value="L">move left</option>
+				<option value="R">move right</option>
+				<option value="D">move down</option>
+			</select>
+			<br>
+			<div class="caption" id="dmr">DIAMOND:</div>
+			<select id="diamondrule">
+				<option value="D">move down</option>
+				<option value="L">move left</option>
+				<option value="R">move right</option>
+				<option value="U">move up</option>
+				<option value="D">move down</option>
+			</select>
+			<br>
+			<div id="testbutton" class="button" style="cursor: pointer;">TEST</div>
+			<div id="resetbutton" class="button" style="cursor: pointer;">RESET</div>
+		</div>
+
+		<div id="gridarea">
+			<div class="snake" style="margin-left:348px;"></div>
+			<!--5 by 5 table-->
+			<table id="gametable">
+			    <tr>
+			        <td><div class="circle"></div></td>
+			        <td><div class="diamond"></div></td>
+			        <td><div class="diamond"></div></td>
+			        <td><div class="diamond"></div></td>
+			        <td><div class="diamond"></div></td>
+			      	<td><div class="diamond"><div class="start">START</div></div></td>
+			    </tr>
+			    <tr>
+			        <td><div class="circle"></div></td>
+			        <td><div class="triangle"></div></td>
+			        <td><div class="triangle"></div></td>
+			        <td><div class="circle"></div></td>
+			        <td><div class="circle"></div></td>
+			        <td><div class="diamond"></div></td>
+			    </tr>
+			    <tr>
+			        <td><div class="circle"></div></td>
+			        <td><div class="square"></div></td>
+			        <td><div class="circle"></div></td>
+			        <td><div class="diamond"></div></td>
+			        <td><div class="circle"></div></td>
+			        <td><div class="square"></div></td>
+			    </tr>
+			    <tr>
+			        <td><div class="circle"></div></td>
+			        <td><div class="square"></div></td>
+			        <td><div class="triangle"></div></td>
+			        <td><div class="finish"><span id="win">WIN</span></div></td>
+			        <td><div class="circle"></div></td>
+			        <td><div class="square"></div></td>
+			    </tr>
+			   	<tr>
+			        <td><div class="circle"></div></td>
+			        <td><div class="square"></div></td>
+			        <td><div class="diamond"></div></td>
+			        <td><div class="diamond"></div></td>
+			        <td><div class="diamond"></div></td>
+			        <td><div class="square"></div></td>
+			    </tr>
+			    <tr>
+			        <td><div class="triangle"></div></td>
+			        <td><div class="triangle"></div></td>
+			        <td><div class="triangle"></div></td>
+			        <td><div class="triangle"></div></td>
+			        <td><div class="triangle"></div></td>
+			        <td><div class="square"></div></td>
+			    </tr>
+	</table>
+			
+		</div>
+		<script>
+			var startR = 0;
+			var startC = 5
+			var redirect = "puzzle1pcinco.html";
+		</script>
+
+		<script src="controller.js"></script>
+	</body>
+</html>

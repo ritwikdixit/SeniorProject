@@ -1,0 +1,49 @@
+body {
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  margin: auto;
+  width: 75%;
+  padding-top: 70px;
+
+}
+
+#centeredarea {
+	text-align: center;
+}
+
+#submitbutton {
+  font-size: 20px;
+  background-color: #e66a5c;
+  color: #fff;
+  padding: 2px;
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  border-radius: 2px;
+  transition: background-color 0.15s ease-out;
+}
+
+#submitbutton:hover {
+  transition: background-color 0.3s ease-out;
+  background-color: #9b59b6;
+
+}
+
+#inputdata {
+	font-size: 21px;
+	margin-bottom: 8px;
+}
+
+#output {
+	display: inline-block;
+	margin: auto;
+	width: 50%;
+}
+
+#rotatethis {
+  -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
